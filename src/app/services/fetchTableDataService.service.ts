@@ -9,7 +9,7 @@ import { IProductList, IUserList } from '../interfaces';
 @Injectable({
   providedIn: 'root',
 })
-export class TableService {
+export class FetchTableDataService {
   constructor(private http: HttpClient) {}
 
   // Method to fetch the list of users from the server.

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { IProductList, ITableColumn, IUserList } from '../../interfaces';
 import { take } from 'rxjs';
-import { TableService } from '../../services/tableServices.service';
+import { FetchTableDataService } from '../../services/fetchTableDataService.service';
 
 @Component({
   selector: 'app-product-list',
@@ -15,7 +15,7 @@ export class ProductListComponent implements OnInit {
   // Array to define the table columns to display in the UI
   tableColumn: ITableColumn[] = [];
 
-  constructor(private httpService: TableService) {}
+  constructor(private httpService: FetchTableDataService) {}
 
   ngOnInit(): void {
     // Define the table columns with their respective names and keys
