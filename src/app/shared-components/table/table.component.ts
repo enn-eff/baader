@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ITableColumn } from '../../../interfaces';
+import { ITableColumn } from '../../interfaces';
 enum SortDirection {
   Ascending,
   Descending,

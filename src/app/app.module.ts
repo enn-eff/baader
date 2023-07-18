@@ -11,7 +11,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UserListComponent } from './module-components/user-list/user-list.component';
 import { ProductListComponent } from './module-components/product-list/product-list.component';
-import { TableComponent } from './module-components/share-components/table/table.component';
+import { TableComponent } from './shared-components/table/table.component';
 
 // Import the custom FilterPipe for filtering data in the app.
 import { FilterPipe } from './filter.pipe';
