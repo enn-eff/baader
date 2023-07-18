@@ -3,12 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { UserListComponent } from './user-list/user-list.component';
-import { ProductListComponent } from './product-list/product-list.component';
-import { TableComponent } from './table/table.component';
-import {HttpClientModule} from "@angular/common/http";
-import {FilterPipe} from "./filter.pipe";
-import {FormsModule} from "@angular/forms";
+import { UserListComponent } from './module-components/user-list/user-list.component';
+import { ProductListComponent } from './module-components/product-list/product-list.component';
+import { TableComponent } from './module-components/share-components/table/table.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FilterPipe } from './filter.pipe';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,15 +16,10 @@ import {FormsModule} from "@angular/forms";
     UserListComponent,
     ProductListComponent,
     TableComponent,
-    FilterPipe
+    FilterPipe,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule,
-    FormsModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

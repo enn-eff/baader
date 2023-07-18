@@ -26,6 +26,6 @@ export interface IProductList {
 }
 
 export interface IProductRating {
-    rate: number;
-    count: number;
+  rate: number;
+  count: number;
 }
